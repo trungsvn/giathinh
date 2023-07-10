@@ -10,8 +10,10 @@
 @import '../scss/components/button';
 
 // Layout
+@import '../scss/layouts/services.scss';
 @import '../scss/layouts/header';
 @import '../scss/layouts/footer';
+@import '../scss/layouts/support.scss';
 
 // Pages
 @import '../scss/pages/index';

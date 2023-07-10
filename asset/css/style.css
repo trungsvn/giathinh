@@ -51,6 +51,64 @@ body .btn {
     max-width: 1200px;
   }
 }
+#intro p {
+  color: black;
+}
+
+/* SERVICES */
+.services {
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background-image: url(../img/bg2.png);
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+}
+
+.section-inner {
+  padding: 60px;
+}
+
+.services__container {
+  max-width: 1199px;
+  margin: auto;
+}
+
+.services__title {
+  text-align: center;
+}
+
+.services__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service__item img {
+  width: 215px;
+}
+
+.service__item {
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px 45px;
+  transform: translateY(0);
+  transition: all 0.5s;
+  -o-border-image: 100 round;
+     border-image: 100 round;
+  border: 3px solid transparent;
+  align-items: center;
+  text-align: center;
+}
+
+.service__item:hover {
+  transform: translateY(-20px);
+  -o-border-image: url(../img/br.png) 1 round;
+     border-image: url(../img/br.png) 1 round;
+}
+
 row {
   display: flex;
 }
@@ -65,14 +123,420 @@ form-group {
   padding-top: 35px;
 }
 
+/* =============== Logo leftArea =============== */
+#frameHead {
+  width: 100%;
+  min-width: 800px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+#logoArea h1,
+#logoArea h2,
+#logoArea h3 {
+  display: inline;
+  vertical-align: bottom;
+}
+
+#logo {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+}
+
+#logoArea {
+  background: #fff url(/CapstoneJS_nhom4-master/img/header/logoBG.gif) repeat-x top left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-width: 800px;
+  height: 48px;
+}
+
+#modelName {
+  padding: 0 10px;
+  color: #474747;
+  font: 900 normal 20px arial, helvetica;
+}
+
+#tradeName {
+  padding: 0;
+  color: #474747;
+  font: 16px arial, helvetica;
+  margin: 0;
+}
+
+/* =============== rightArea =============== */
+#rightArea {
+  background: url(/CapstoneJS_nhom4-master/img/header/headerBG.gif) repeat-x left top;
+  height: 48px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 100;
+}
+
+.headerSlope {
+  width: 140px;
+  display: inline;
+  float: left;
+}
+
+.float-r {
+  display: flex;
+  float: right;
+}
+
+.float-r > li:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.float-r > li {
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+#carouselId {
+  height: 410px;
+}
+
+#frameProducts {
+  width: 100%;
+  top: 440px;
+  left: 0px;
+  position: absolute;
+  z-index: 100;
+}
+
+#searchProducts {
+  top: 60px;
+  position: relative;
+}
+
+#frameService {
+  width: 100%;
+  top: 1350px;
+  position: absolute;
+  z-index: 100;
+}
+
+#iconService {
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+#frameSupport {
+  width: 100%;
+  top: 1920px;
+  position: absolute;
+  z-index: 100;
+}
+
+#footer {
+  top: 890px;
+  position: relative;
+}
+
 #GiaThinhFooter {
-  background-color: rgb(216, 250, 215);
+  background-color: white;
 }
 
 #backtotop {
   width: 40px;
   height: 40px;
-  background-color: blue;
+  background-color: rebeccapurple;
   font-size: 2rem;
   line-height: 40px;
+}
+
+/*****support*************/
+.containerSupport {
+  top: 840px;
+  position: relative;
+  width: 80%;
+  padding: auto;
+}
+
+#downloadsList {
+  display: -ms-inline-grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  gap: 10px;
+}
+
+.brochures {
+  background-color: #e1e440;
+  box-sizing: border-box;
+  display: block;
+  padding: 20px 30px 20px 30px;
+  border-radius: 3px;
+}
+
+.brochures a {
+  background-color: #e1e500;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+}
+
+.manuals {
+  background-color: #B355B3;
+  box-sizing: border-box;
+  display: block;
+  padding: 20px 30px 20px 30px;
+  border-radius: 3px;
+}
+
+.manuals a {
+  background-color: #783678;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+}
+
+.drivers {
+  background-color: #96be44;
+  box-sizing: border-box;
+  display: block;
+  padding: 20px 30px 20px 30px;
+  border-radius: 3px;
+}
+
+.drivers a {
+  background-color: #5f870c;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+}
+
+.softwares {
+  background-color: #2c8be5;
+  box-sizing: border-box;
+  display: block;
+  padding: 20px 30px 20px 30px;
+  border-radius: 3px;
+}
+
+.softwares a {
+  background-color: #0f589d;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+}
+
+.errors {
+  background-color: #e4405e;
+  box-sizing: border-box;
+  display: block;
+  padding: 20px 30px 20px 30px;
+  border-radius: 3px;
+}
+
+.errors a {
+  background-color: #ae1430;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+}
+
+.videos {
+  background-color: #e52ccc;
+  box-sizing: border-box;
+  display: block;
+  padding: 20px 30px 20px 30px;
+  border-radius: 3px;
+}
+
+.videos a {
+  background-color: #9d0f67;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+}
+
+.icon {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.brochures a {
+  background-color: #ae1430;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+}
+
+.downloadsBtn:hover {
+  opacity: 70%;
+}
+
+.cf-header {
+  padding-top: 20px;
+  border-bottom: solid 1px #0056a8;
+  padding-bottom: 42px;
+}
+
+.cf-left-title {
+  width: auto;
+  background: #0056a8;
+  color: #fff;
+  line-height: 42px;
+  font-size: 18px;
+  position: relative;
+  margin: 0;
+  padding-left: 50px;
+}
+
+.cf-left-title:after {
+  position: absolute;
+  content: "";
+  right: -42px;
+  border: 21px solid transparent;
+  border-bottom: 21px solid #0056a8;
+  border-left: 21px solid #0056a8;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-left {
+  margin-left: 0 !important;
+}
+
+.sub-cat {
+  display: flex;
+  margin: 0;
+  line-height: 45px;
+  margin-left: 100px;
+  float: right;
+  padding-top: 10px;
+}
+
+.sub-cat > span:hover {
+  color: blue;
+  line-height: 110%;
+}
+
+/* -- Products Check Box -- */
+#printersTopBody {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#pdCheckBox {
+  color: #FFF;
+  /* margin-top:5px; */
+  background-color: #494e52;
+  font-size: 13px;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+#pdCheckBoxTop {
+  /* background:url(/products/copier/common/img/bg_checkbox_top.gif) center top no-repeat; */
+  height: 5px;
+}
+
+#pdCheckBoxList {
+  /* background:url(/products/copier/common/img/bg_checkbox_bottom.gif) center bottom no-repeat; */
+  padding-bottom: 10px;
+  /* display: flex; */
+}
+
+.clearfix {
+  display: flex;
+}
+
+#pdCheckBox ul {
+  /* background:url(/products/copier/common/img/bg_checkbox_line.gif) left top repeat-y; */
+  margin: 3px 0 0 15px;
+  padding: 2px 0 0 0;
+}
+
+#pdCheckBox ul li {
+  /* float:left; */
+  /* display: flex; */
+  padding-left: 15px;
+}
+
+#pdCheckBox ul li ul {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+#pdCheckBox ul li ul li {
+  float: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+#pdCheckBox ul li ul li input {
+  margin-right: 5px;
+}
+
+#pdCheckBox ul li dl dt {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 108%;
+  font-weight: bold;
+}
+
+#pdCheckBox ul li#sec00 {
+  padding-left: 10px;
+  width: 160px;
+}
+
+#pdCheckBox ul li#sec01 {
+  padding-left: 0;
+  width: 93px;
+}
+
+#pdCheckBox ul li#sec02 {
+  width: 105px;
+}
+
+#pdCheckBox ul li#sec03 {
+  width: 152px;
+}
+
+#pdCheckBox ul li#sec04 {
+  width: 155px;
+}
+
+#pdCheckBox ul li#sec05 {
+  width: 138px;
+}
+
+#pdCheckBox ul li#sec06 {
+  width: 160px;
+}
+
+#pdCheckBox ul li#sec07 {
+  padding-left: 17px;
+  width: 165px;
+}
+
+#sec07 input {
+  width: 133px;
+  line-height: 21px;
+  color: #333;
 }/*# sourceMappingURL=style.css.map */
