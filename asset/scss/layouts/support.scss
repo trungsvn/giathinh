@@ -14,7 +14,7 @@
 .containerSupport{
   top: 840px;
     position: relative;
-    width: 80%;
+    // width: 80%;
     padding: auto;
 }
 #downloadsList{
@@ -127,6 +127,10 @@
     padding: 5px 10px 5px 10px;
     border-radius: 3px;
 }
-.downloadsBtn:hover{
-    opacity: 70%;
+.downloadsBtn {
+  transform: translateY(0);
+}.downloadsBtn:hover{
+    opacity: 80%;
+    transform: translateY(-10px);
+    transition: all 1s;
 }

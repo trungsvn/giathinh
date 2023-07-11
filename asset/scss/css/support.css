@@ -1,8 +1,7 @@
 /*****support*************/
 .containerSupport {
-  top: 650px;
+  top: 840px;
   position: relative;
-  width: 80%;
   padding: auto;
 }
 
@@ -123,6 +122,12 @@
   border-radius: 3px;
 }
 
+.downloadsBtn {
+  transform: translateY(0);
+}
+
 .downloadsBtn:hover {
-  opacity: 70%;
+  opacity: 80%;
+  transform: translateY(-10px);
+  transition: all 1s;
 }/*# sourceMappingURL=support.css.map */
