@@ -160,7 +160,7 @@ form-group {
 }
 
 #logoArea {
-  background: #fff url(/CapstoneJS_nhom4-master/img/header/logoBG.gif) repeat-x top left;
+  background: #fff url(/img/header/logoBG.gif) repeat-x top left;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -184,7 +184,7 @@ form-group {
 
 /* =============== rightArea =============== */
 #rightArea {
-  background: url(/CapstoneJS_nhom4-master/img/header/headerBG.gif) repeat-x left top;
+  background: url(/img/header/headerBG.gif) repeat-x left top;
   height: 48px;
   position: absolute;
   right: 0px;
